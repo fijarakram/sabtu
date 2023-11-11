@@ -7,6 +7,7 @@ st.write("# Heading 1")
 # Kinerja unit
 st.metric("Kinerja", 40, -1)
 st.metric("Response Time", 30, 20)
+st.metric("Saham", 100, 20)
 
 # Pilihan
 pilih1 = st.checkbox('Ya')
@@ -19,7 +20,10 @@ st.write(pilih2)
 Ini komentar harusnya
 """
 
-st.radio('Makanan Kesukaan', ['Bakso', 'Nasi Goreng', 'Mie Ayam'])
+makanan = st.radio('Makanan Kesukaan', ['Bakso', 'Nasi Goreng', 'Mie Ayam'])
+
+st.write(makanan)
+
 minuman=st.selectbox('Pilih minuman yang akan dipesan', 
              ['Es teh', 'Kopi', 'Jus'])
 
